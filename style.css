@@ -11,7 +11,6 @@
 }
 .outerbox {
   border: 2px solid black;
-  /* background-color: rgb(85, 85, 243); */
   background-color: #3075ec;
   color: white;
   width: 500px;
@@ -24,7 +23,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 4px; */
 }
 .header > h4 {
   margin: 5px;
@@ -34,7 +32,7 @@
   width: 35px;
 }
 .maincontent {
-  background-color: rgb(223, 210, 185);
+  background-color: rgb(238, 237, 215);
   flex-grow: 1;
   border-radius: 5px 5px 0 0;
 }
@@ -48,115 +46,101 @@
   width: 80px;
   background-color: #fff;
   border-bottom: none;
-  /* border-top: 5px solid rgb(255, 196, 0); */
-  /* outline: 5px dotted green; */
-  /* padding: 0; */
 }
 .buttons {
   border-radius: 3px 3px 0 0;
   font-size: 15px;
   padding: 5px;
-  /* width: 80px; */
   margin-left: 1px;
   border: 1px solid grey;
-  /* border-radius: 5px 5px 0 0; */
 }
 .workoutarea {
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-around;
   width: 98%;
   border-radius: 5px 5px 0 0;
   margin-left: 5px;
   padding: 5px;
-  /* box-shadow: 5px; */
+  border-left: 1px solid black;
+  /* border: 5px 4px 3px 2px solid black; */
+  /* box-shadow: 2px pink; */
+  box-shadow: 2px 3px rgb(187, 181, 181);
 }
-.lstbtns {
-  width: 90px;
-  height: 25px;
-  margin-right: 10px;
+.start1{
+  display: flex;
+  justify-content: space-between;
+}
+.start2{
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
+}
+.start3{
+  margin-top: 10px;
+  display: flex;
+}
+.start3>.effect{
+  width: 50%;
 }
 label {
   color: #000;
 }
 .cmmn {
-  width: 30%;
   display: flex;
   flex-direction: column;
 }
 .cmmn > input {
   flex: 1;
 }
+select{
+  margin-top: 5px;
+}
+.one{
+  width: 40%;
+}
+.two {
+  width: 30%;
+}
+.three {
+  width: 20%;
+}
+.one>select{
+  width: 185px;
+}
 legend {
   color: black;
 }
 #preview {
   color: black;
-  /* border: 5px solid blue; */
   width: 50%;
   display: flex;
   justify-content: center;
 }
 #preview > fieldset {
-  /* padding: 3px;*/
-  /* width: 250px; */
   width: 100%;
   height: 91px; 
-
   border-radius: 5px;
-}
-#preview > legend {
-  color: blue;
-  /* padding-left: 5px; */
-  /* margin-left: 500px; */
-  /* margin: 5px; */
 }
 #preview1 {
   margin: 2px;
-  border: 1px solid black;
+  border: 2px solid black;
   text-align: center;
-  padding: 15px;
   height: 65px;
-}
-#lstwrd {
-  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 select {
   padding: 2px;
   font-size: 15px;
 }
-.two {
-  width: 100px;
-}
-.three {
-  width: 100px;
-}
 .effect > fieldset {
   border-radius: 5px;
   padding: 5px;
-  /* width: 200px; */
   width: 90%;
   height: 90px;
-  color: blue;
-  /* border: 2px solid black; */
 }
 legend{
-  color: rgb(109, 109, 201);
-  
-}
-.workoutarea2{
-  /* border: 2px solid black; */
-  display: flex;
-
-}
-.workoutarea2>.effect{
-  /* border: 2px solid black; */
-  width: 50%;
-}
-
-#underline {
-  width: 170px;
+  color: rgb(92, 65, 240);
 }
 #color {
   width: 130px;
@@ -165,14 +149,6 @@ legend{
   padding: 5px;
   margin-top: 15px;
 }
-.lstbtns1 {
-  display: flex;
-  justify-content: flex-end;
-  margin: 10px 5px;
-}
-/* label::first-letter {
-  text-decoration: underline;
-} */
 #preview1 {
   display: flex;
   flex-direction: row;
@@ -181,7 +157,7 @@ legend{
 #preview1:before, #preview1:after{
   content: "";
   flex: 1 1;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   margin: auto;
 }
 #preview1:before {
@@ -189,4 +165,26 @@ legend{
 }
 #preview1:after {
   margin-left: 10px
+}
+#color1{
+  margin-left: 15px;
+} 
+#color1>select{
+  width: 140px;
+}
+#lstwrd {
+  color: #000;
+  margin: 20px 0 10px 0;
+}
+.lstbtns {
+  width: 90px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.lstbtns1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 2px solid black; */
 }
