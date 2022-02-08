@@ -14,6 +14,8 @@
   background-color: #3075ec;
   color: white;
   width: 500px;
+  /* max-width: 500px;
+  min-width: 200px; */
   height: 500px;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -46,6 +48,18 @@
   width: 80px;
   background-color: #fff;
   border-bottom: none;
+  position: relative;
+}
+#fontwidth::after{
+  content: "";
+position: absolute;
+display: block;
+border-radius: 3px;
+height: 4px;
+width: 84px;
+background-color: #F0CF98;
+bottom: 98%;
+right: -3px;
 }
 .buttons {
   border-radius: 3px 3px 0 0;
