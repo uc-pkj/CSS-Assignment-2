@@ -11,7 +11,7 @@
 }
 .outerbox {
   border: 2px solid black;
-  background-color: #3075ec;
+  background:linear-gradient(to bottom,#0058ed,rgb(0,59,218)) ;
   color: white;
   width: 500px;
   /* max-width: 500px;
@@ -20,16 +20,21 @@
   border-radius: 10px 10px 0 0;
   display: flex;
   flex-flow: column;
+  padding: 1px;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 5px 10px 5px #093AEB inset;
 }
 .header > h4 {
   margin: 5px;
   font-size: 20px;
+  font-family: 'Castoro', serif;
+  color: rgb(238, 231, 222);
 }
+
 .trcimage {
   width: 35px;
 }
@@ -95,6 +100,10 @@ right: -3px;
 .start3>.effect{
   width: 50%;
 }
+input[type="checkbox"] {
+  background: linear-gradient(to bottom, #e6e6e3,#ffffff);
+
+}
 label {
   color: #000;
 }
@@ -119,6 +128,12 @@ select{
 }
 .one>select{
   width: 185px;
+}
+.effect input[type=checkbox] {
+  outline: 1px solid rgb(43, 38, 38);
+}
+#normalfont input[type=checkbox] {
+  outline: 1px solid rgb(43, 38, 38);
 }
 legend {
   color: black;
@@ -146,6 +161,11 @@ legend {
 select {
   padding: 2px;
   font-size: 15px;
+}
+option:checked {
+  color: white;
+  background-color: #446EB4;
+  /* background-color: rgb(101, 103, 245); */
 }
 .effect > fieldset {
   border-radius: 5px;
