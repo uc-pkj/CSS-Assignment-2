@@ -54,6 +54,9 @@
   background-color: #fff;
   border-bottom: none;
   position: relative;
+  /* outline: 1px solid blue; */
+  outline-offset: -6px;
+  outline: 1px dotted black;
 }
 #fontwidth::after{
   content: "";
@@ -102,7 +105,7 @@ right: -3px;
 }
 input[type="checkbox"] {
   background: linear-gradient(to bottom, #e6e6e3,#ffffff);
-
+  /* border-radius: 50px; */
 }
 label {
   color: #000;
@@ -114,8 +117,9 @@ label {
 .cmmn > input {
   flex: 1;
 }
-select{
-  margin-top: 5px;
+.input1::placeholder{
+  /* font-weight: bold; */
+  color: #000;
 }
 .one{
   width: 40%;
@@ -129,12 +133,12 @@ select{
 .one>select{
   width: 185px;
 }
-.effect input[type=checkbox] {
+/* .effect input[type=checkbox] {
   outline: 1px solid rgb(43, 38, 38);
-}
-#normalfont input[type=checkbox] {
+} */
+/* #normalfont input[type=checkbox] {
   outline: 1px solid rgb(43, 38, 38);
-}
+} */
 legend {
   color: black;
 }
