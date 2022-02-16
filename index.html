@@ -11,7 +11,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/56fdbf90e3.js" crossorigin="anonymous"></script>
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
 </head>
 
 <body>
@@ -22,12 +21,10 @@
                 <div>
                     <i class="fa-solid fa-question"></i>
                     <i class="fa-solid fa-xmark"></i>
-                    <!-- <i class="fa-regular fa-xmark"></i> -->
-                    <!-- <img class="trcimage" src="./Image/help.png" alt="help_image"> -->
-                    <!-- <img src="https://img.icons8.com/color/48/000000/close-window.png" class="trcimage" /> -->
                 </div>
             </div>
 
+            <!-- All top buttons  -->
             <div class="maincontent">
                 <div class="topbtns">
                     <button class="buttons">Number</button>
@@ -37,21 +34,20 @@
                     <button class="buttons">Patterns</button>
                     <button class="buttons">Protection</button>
                 </div>
-
                 <div class="workoutarea">
                     <div class="start1">
+
+                        <!-- Font section  -->
                         <div class="one cmmn">
                             <label for="fonts"><u>F</u>ont : </label>
-                            <!-- <textarea name="" id="">verdana</textarea> -->
                             <input class="input1" type="text" placeholder="Verdana">
-                            <select  name="fonts" size="5" autocomplete="off">
-                                <option value="architectural">Architectural</option>
+                            <select  name="fonts" id="fonts" size="5" autocomplete="off">
+                                <option value="architectural">Tw Cen MT</option>
                                 <option value="arialv">Arial</option>
                                 <option value="opel">Opel</option>
                                 <option value="arial-bold">Arial-bold</option>
-                                <option value="Verdana">Verdana</option>
-                                <option value="clarendon-fortune-bold">Clarendon-fortune-bold</option>
                                 <option value="Verdana" selected>Verdana</option>
+                                <option value="clarendon-fortune-bold">Clarendon-fortune-bold</option>
                                 <option value="Helvetica">Helvetica</option>
                                 <option value="Tahoma">Tahoma</option>
                                 <option value="Times New Roman">Times New Roman</option>
@@ -59,10 +55,11 @@
                                 <option value="Garamond">Garamond</option>
                             </select>
                         </div>
+
+                        <!-- Font style section  -->
                         <div class="two cmmn">
                             <label for="fontstyles">F<u>o</u>nt Styles : </label>
                             <input type="text" placeholder="Regular" class="input1">
-
                             <select name="fontstyles" id="fontstyles" size="5" autocomplete="off">
                                 <option value="Regular" selected>Regular</option>
                                 <option value="Italic">Italic</option>
@@ -70,15 +67,16 @@
                                 <option value="BoldItallic">Bold Italic</option>
                             </select>
                         </div>
+
+                        <!-- Font size Section  -->
                         <div class="three cmmn">
                             <label for="size"><u>S</u>ize : </label>
                             <input type="text" placeholder="10" class="input1">
-
                             <select name="size" id="size" size="5" autocomplete="off">
-                                <option value="5">5</option>
-                                <option value="7">7</option>
-                                <option value="9">9</option>
-                                <option value="11" selected>10</option>
+                                <option value="5">8</option>
+                                <option value="7">9</option>
+                                <option value="9" selected>10</option>
+                                <option value="11">11</option>
                                 <option value="13">13</option>
                                 <option value="15">15</option>
                                 <option value="17">17</option>
@@ -88,8 +86,9 @@
                         </div>
                     </div>
                     <div class="start2">
+
+                        <!-- underline section  -->
                         <div class="one">
-                            <!-- <i class="fa-dark fa-angle-down"></i> -->
                             <label for="underline"><u>U</u>nderline : </label><br>
                             <select class="alignment-option " name="underline" id="underline" autocomplete="off">
                                 <option value="none">None</option>
@@ -97,6 +96,8 @@
                                 <option value="10">10</option>
                             </select>
                         </div>
+
+                        <!-- color section  -->
                         <div id="color1" class="two">
                             <label for="color"><u>C</u>olor : </label><br>
                             <select class="alignment-option" name="color" id="color" autocomplete="off">
@@ -105,20 +106,24 @@
                                 <option value="Colorful">Colorful</option>
                             </select>
                         </div>
+
+                        <!-- normal font section  -->
                         <div id="normalfont">
-                            <input type="checkbox" name="normalfont" checked autocomplete="off">
-                            <label for="normalfont"><u>N</u>ormal Font</label>
+                            <input type="checkbox" name="normalfont" id="normalfont1" checked>
+                            <label for="normalfont1"><u>N</u>ormal Font</label>
                         </div>
                     </div>
                     <div class=" start3">
+
+                        <!-- font section  -->
                         <div class="effect">
                             <fieldset>
                                 <legend>Effects</legend>
-                                <input autocomplete="off" type="checkbox" name="Strikethrough" id="Strikethrough">
+                                <input  type="checkbox" name="Strikethrough" id="Strikethrough">
                                 <label for="Strikethrough">Stri<u>k</u>ethrough</label><br>
-                                <input autocomplete="off" type="checkbox" name="Superscript" id="Superscript">
+                                <input type="checkbox" name="Superscript" id="Superscript">
                                 <label for="Superscript">Sup<u>e</u>rscript</label><br>
-                                <input autocomplete="off" type="checkbox" name="Subscript" id="Subscript">
+                                <input type="checkbox" name="Subscript" id="Subscript">
                                 <label for="Subscript">Su<u>b</u>script</label>
                             </fieldset>
                         </div>
@@ -126,21 +131,19 @@
                             <fieldset>
                                 <legend>Preview</legend>
                                 <p id="preview1">AaBbCcYyZz</p>
-                                <!-- <h1 id="preview1">AaBbCcYyZz</h1> -->
                             </fieldset>
                         </div>
                     </div>
-
                     <p id="lstwrd">This is a TrueType Font. The same font will be used on both your
                         printer and your screen.</p>
                 </div>
 
+                <!-- last buttons  -->
                 <div class="lstbtns1">
                     <button id="okbtn" class="lstbtns">OK</button>
                     <button class="lstbtns">Cancel</button>
                 </div>
             </div>
-
         </div>
     </div>
 </body>

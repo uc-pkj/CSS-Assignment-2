@@ -14,8 +14,6 @@
   background: linear-gradient(to bottom, #0058ed, rgb(0, 59, 218));
   color: white;
   width: 500px;
-  /* max-width: 500px;
-  min-width: 200px; */
   height: 500px;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -33,10 +31,6 @@
   font-size: 20px;
   font-family: "Castoro", serif;
   color: rgb(238, 231, 222);
-}
-
-.trcimage {
-  width: 35px;
 }
 i {
   font-size: 19px;
@@ -65,7 +59,6 @@ i {
   background-color: #fff;
   border-bottom: none;
   position: relative;
-  /* outline: 1px solid blue; */
   outline-offset: -6px;
   outline: 1px dotted black;
 }
@@ -99,6 +92,29 @@ i {
   display: flex;
   justify-content: space-between;
 }
+.one {
+  width: 40%;
+}
+.one > select {
+  width: 185px;
+  border: 1px solid rgb(136, 153, 212);
+}
+.cmmn {
+  display: flex;
+  flex-direction: column;
+}
+.cmmn > input {
+  flex: 1;
+}
+.two {
+  width: 30%;
+}
+.three {
+  width: 20%;
+}
+.input1::placeholder {
+  color: #000;
+}
 .start2 {
   display: flex;
   justify-content: space-between;
@@ -111,7 +127,6 @@ i {
 .start3 > .effect {
   width: 50%;
 }
-
 input[type="checkbox"] {
   appearance: none;
   height: 14px;
@@ -133,31 +148,6 @@ input[type="checkbox"]:checked:after {
 
 label {
   color: #000;
-}
-.cmmn {
-  display: flex;
-  flex-direction: column;
-}
-.cmmn > input {
-  flex: 1;
-}
-.input1::placeholder {
-  /* font-weight: bold; */
-  color: #000;
-}
-.one {
-  width: 40%;
-  /* background-color: black; */
-}
-.two {
-  width: 30%;
-}
-.three {
-  width: 20%;
-}
-.one > select {
-  width: 185px;
-  border: 1px solid rgb(136, 153, 212);
 }
 
 .alignment-option {
@@ -197,7 +187,6 @@ select {
 option:checked {
   color: white;
   background-color: #446eb4;
-  /* background-color: rgb(101, 103, 245); */
 }
 .effect > fieldset {
   border-radius: 5px;
