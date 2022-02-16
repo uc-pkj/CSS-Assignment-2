@@ -11,7 +11,7 @@
 }
 .outerbox {
   border: 2px solid black;
-  background:linear-gradient(to bottom,#0058ed,rgb(0,59,218)) ;
+  background: linear-gradient(to bottom, #0058ed, rgb(0, 59, 218));
   color: white;
   width: 500px;
   /* max-width: 500px;
@@ -26,17 +26,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 10px 5px #093AEB inset;
+  box-shadow: 5px 15px 7px #093aeb inset;
 }
 .header > h4 {
   margin: 5px;
   font-size: 20px;
-  font-family: 'Castoro', serif;
+  font-family: "Castoro", serif;
   color: rgb(238, 231, 222);
 }
 
 .trcimage {
   width: 35px;
+}
+i {
+  font-size: 19px;
+  border: 2px solid white;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.fa-xmark {
+  background-color: rgb(243, 64, 64);
+  color: white;
+  margin-right: 7px;
 }
 .maincontent {
   background-color: rgb(238, 237, 215);
@@ -49,7 +60,7 @@
   align-items: center;
   margin-top: 15px;
 }
-#fontwidth{
+#fontwidth {
   width: 80px;
   background-color: #fff;
   border-bottom: none;
@@ -58,16 +69,16 @@
   outline-offset: -6px;
   outline: 1px dotted black;
 }
-#fontwidth::after{
+#fontwidth::after {
   content: "";
-position: absolute;
-display: block;
-border-radius: 3px;
-height: 4px;
-width: 84px;
-background-color: #F0CF98;
-bottom: 98%;
-right: -3px;
+  position: absolute;
+  display: block;
+  border-radius: 3px;
+  height: 4px;
+  width: 84px;
+  background-color: #f0cf98;
+  bottom: 98%;
+  right: -3px;
 }
 .buttons {
   border-radius: 3px 3px 0 0;
@@ -82,31 +93,44 @@ right: -3px;
   border-radius: 5px 5px 0 0;
   margin-left: 5px;
   padding: 5px;
-  border-left: 1px solid black;
-  /* border: 5px 4px 3px 2px solid black; */
-  /* box-shadow: 2px pink; */
-  box-shadow: 2px 3px rgb(187, 181, 181);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.start1{
+.start1 {
   display: flex;
   justify-content: space-between;
 }
-.start2{
+.start2 {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.start3{
+.start3 {
   margin-top: 10px;
   display: flex;
 }
-.start3>.effect{
+.start3 > .effect {
   width: 50%;
 }
+
 input[type="checkbox"] {
-  background: linear-gradient(to bottom, #e6e6e3,#ffffff);
-  /* border-radius: 50px; */
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border: 2px solid #406b8f;
+  background: linear-gradient(to bottom,#E6E6E3,#ffffff);
+  border-radius: 1px;
 }
+input[type="checkbox"]:after {
+  font-family: "font awesome 5 free";
+  content: "\f00c";
+  font-weight: 700;
+  font-size: 12px;
+  display: none;
+}
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
 label {
   color: #000;
 }
@@ -117,12 +141,13 @@ label {
 .cmmn > input {
   flex: 1;
 }
-.input1::placeholder{
+.input1::placeholder {
   /* font-weight: bold; */
   color: #000;
 }
-.one{
+.one {
   width: 40%;
+  /* background-color: black; */
 }
 .two {
   width: 30%;
@@ -130,15 +155,18 @@ label {
 .three {
   width: 20%;
 }
-.one>select{
+.one > select {
   width: 185px;
+  border: 1px solid rgb(136, 153, 212);
 }
-/* .effect input[type=checkbox] {
-  outline: 1px solid rgb(43, 38, 38);
-} */
-/* #normalfont input[type=checkbox] {
-  outline: 1px solid rgb(43, 38, 38);
-} */
+
+.alignment-option {
+  background-size: 18px;
+  background-image: url(./Image/dropdown.svg);
+  background-position: top 0px right 0px;
+  background-repeat: no-repeat;
+  appearance: none;
+}
 legend {
   color: black;
 }
@@ -150,7 +178,7 @@ legend {
 }
 #preview > fieldset {
   width: 100%;
-  height: 91px; 
+  height: 91px;
   border-radius: 5px;
 }
 #preview1 {
@@ -168,7 +196,7 @@ select {
 }
 option:checked {
   color: white;
-  background-color: #446EB4;
+  background-color: #446eb4;
   /* background-color: rgb(101, 103, 245); */
 }
 .effect > fieldset {
@@ -177,7 +205,7 @@ option:checked {
   width: 90%;
   height: 90px;
 }
-legend{
+legend {
   color: rgb(92, 65, 240);
 }
 #color {
@@ -192,22 +220,23 @@ legend{
   flex-direction: row;
   font-size: 20px;
 }
-#preview1:before, #preview1:after{
+#preview1:before,
+#preview1:after {
   content: "";
   flex: 1 1;
   border-bottom: 2px solid;
   margin: auto;
 }
 #preview1:before {
-  margin-right: 10px
+  margin-right: 10px;
 }
 #preview1:after {
-  margin-left: 10px
+  margin-left: 10px;
 }
-#color1{
+#color1 {
   margin-left: 15px;
-} 
-#color1>select{
+}
+#color1 > select {
   width: 140px;
 }
 #lstwrd {
@@ -219,10 +248,13 @@ legend{
   height: 25px;
   margin-right: 10px;
   margin-top: 10px;
+  border: 1px solid black;
+}
+#okbtn{
+  box-shadow: 0 0 3px 2px rgb(105, 145, 231) inset;
 }
 .lstbtns1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border: 2px solid black; */
 }
