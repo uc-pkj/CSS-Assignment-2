@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -24,13 +25,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 15px 7px #093aeb inset;
+  box-shadow: 5px 15px 5px #093aeb inset;
 }
 .header > h4 {
   margin: 5px;
-  font-size: 20px;
-  font-family: "Castoro", serif;
-  color: rgb(238, 231, 222);
+  font-size: 17px;
+  padding-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(233, 230, 227);
 }
 i {
   font-size: 19px;
