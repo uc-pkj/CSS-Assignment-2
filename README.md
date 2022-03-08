@@ -2,7 +2,7 @@
 
 *** ACCESS KEY'S ***
 
-OPT + CTRL + F => FONT
+OPT + CTRL + F => FONT\n
 OPT + CTRL + O => FONT STYLE
 OPT + CTRL + S => FONT SIZE
 OPT + CTRL + U => UNDERLINE
