@@ -2,8 +2,8 @@
 
 *** ACCESS KEY'S ***
 
-OPT + CTRL + F => FONT
-OPT + CTRL + O => FONT STYLE
+OPT + CTRL + F => FONT<br />
+OPT + CTRL + O => FONT STYLE<br />
 OPT + CTRL + S => FONT SIZE
 OPT + CTRL + U => UNDERLINE
 OPT + CTRL + C => COLOR
